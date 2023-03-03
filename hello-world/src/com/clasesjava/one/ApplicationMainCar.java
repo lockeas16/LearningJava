@@ -7,7 +7,7 @@ public class ApplicationMainCar {
 		car = new Car();
 		
 		// Asignamos un atributo y usamos un método
-		car.color = "Rosa";
+		car.color = "Cafe";
 		System.out.println(car.obtainColor());
 		
 		// Llamamos el otro metodo de la clase
