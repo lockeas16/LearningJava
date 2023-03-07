@@ -26,4 +26,4 @@
    - [Manejo de variables y control de flujo](./hello-world/src/Ejercicios20Feb.java)
    - [Manejo de variables y ciclos](./hello-world/src/Ejercicios22Feb.java)
    - Ejercicio para implementar una Clase Pelicula [Clase Pelicula](./hello-world/src/com/clasesjava/one/Pelicula.java) | [Application Main que usa Clase Pelicula](./hello-world/src/com/clasesjava/one/ApplicationPelicula.java)
-   - Ejercicio para practicar Constructores [Clase CarConstructores](./hello-world/src/com/clasesjava/one/CarConstructores.java) | [Application Main que usa Clase CarConstructores](./hello-world/src/com/clasesjava/one/ApplicationMainCarConstructores.java)
+   - Ejercicio para practicar Constructores :hammer_and_wrench: (comming soon)
