@@ -20,10 +20,14 @@
       - [Clase UserConstructor](./hello-world/src/com/clasesjava/one/UserConstructor.java) | [Application Main que usa ClaseConstructor](./hello-world/src/com/clasesjava/one/ApplicationConstructores.java)
          - Con notas respecto a uso de palabra reservada `this`
          - Ejemplo de definicion de varios constructores para la clase UserConstructor, que a esto se le llama **sobrecarga de metodos**. *Un constructor al final es un método más de la clase*
+      - [Clase CarroConstructor](./hello-world/src/com/clasesjava/one/Carro.java) | [Application Main que usa Clase Carro](./hello-world/src/com/clasesjava/one/ApplicationMainCarro.java)
+   - [Arreglos](./hello-world/src/com/clasesjava/one/Arreglos.java)
+      - Con notas respecto al tamaño de arreglos y sus límites al momento de accederlos
+      - Ejemplo de un arreglo usando una clase construida, la de Carro
 
 # Ejercicios
    - [Jugando con definicion de variables](./hello-world/src/PlayingVars.java)
    - [Manejo de variables y control de flujo](./hello-world/src/Ejercicios20Feb.java)
    - [Manejo de variables y ciclos](./hello-world/src/Ejercicios22Feb.java)
    - Ejercicio para implementar una Clase Pelicula [Clase Pelicula](./hello-world/src/com/clasesjava/one/Pelicula.java) | [Application Main que usa Clase Pelicula](./hello-world/src/com/clasesjava/one/ApplicationPelicula.java)
-   - Ejercicio para practicar Constructores :hammer_and_wrench: (comming soon)
+   - Ejercicio para practicar Constructores y metodos [Clase Botella](./hello-world/src/com/clasesjava/one/Botella.java) | [Application Main que usa Clase Botella](./hello-world/src/com/clasesjava/one/ApplicationMainBotella.java)
