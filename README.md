@@ -24,6 +24,11 @@
    - [Arreglos](./hello-world/src/com/clasesjava/one/Arreglos.java)
       - Con notas respecto al tamaño de arreglos y sus límites al momento de accederlos
       - Ejemplo de un arreglo usando una clase construida, la de Carro
+   - Visibilidad
+      - Ejemplo de visibilidad public para clases, donde una clase de un paquete se puede usar en otro [Clase Patito package com.clasesjava.publicClasses](./hello-world/src/com/clasesjava/publicClasses/Patito.java) | [Application Main donde se usa Patito](./hello-world/src/com/clasesjava/one/ApplicationMainPatito.java)
+      - Trabajando con la visibilidad de una clase Usuario [Clase Usuario](./hello-world/src/com/clasesjava/one/Usuario.java) | [Application Main donde se usa Usuario](./hello-world/src/com/clasesjava/one/ApplicationMainVisib.java)
+         - Con notas respecto a visibilidad por defecto, public y private
+         - Con notas respecto a uso de metodos para asignar y recuperar los valores de atributos privados, que pueden implementar lógica
 
 # Ejercicios
    - [Jugando con definicion de variables](./hello-world/src/PlayingVars.java)
