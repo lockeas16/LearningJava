@@ -32,7 +32,8 @@
 
 # Ejercicios
    - [Jugando con definicion de variables](./hello-world/src/PlayingVars.java)
-   - [Manejo de variables y control de flujo](./hello-world/src/Ejercicios20Feb.java)
-   - [Manejo de variables y ciclos](./hello-world/src/Ejercicios22Feb.java)
-   - Ejercicio para implementar una Clase Pelicula [Clase Pelicula](./hello-world/src/com/clasesjava/one/Pelicula.java) | [Application Main que usa Clase Pelicula](./hello-world/src/com/clasesjava/one/ApplicationPelicula.java)
-   - Ejercicio para practicar Constructores y metodos [Clase Botella](./hello-world/src/com/clasesjava/one/Botella.java) | [Application Main que usa Clase Botella](./hello-world/src/com/clasesjava/one/ApplicationMainBotella.java)
+   - [Manejo de variables y control de flujo](./hello-world/src/Ejercicios20Feb.java) | [Instrucciones de Ejercicio](./ejercicios/Ejercicios20Feb_Tipos_Variables.txt)
+   - [Manejo de variables y ciclos](./hello-world/src/Ejercicios22Feb.java) | [Instrucciones de Ejercicio](./ejercicios/Ejercicios23Feb_Ciclos.txt) 
+   - Ejercicio para implementar una Clase Pelicula [Clase Pelicula](./hello-world/src/com/clasesjava/one/Pelicula.java) | [Application Main que usa Clase Pelicula](./hello-world/src/com/clasesjava/one/ApplicationPelicula.java) | [Instrucciones de Ejercicio](./ejercicios/Ejercicios02Mar_Definic_Clases.txt) 
+   - Ejercicio para practicar Constructores y metodos [Clase Botella](./hello-world/src/com/clasesjava/one/Botella.java) | [Application Main que usa Clase Botella](./hello-world/src/com/clasesjava/one/ApplicationMainBotella.java) | [Instrucciones de Ejercicio](./ejercicios/Ejercicios09Mar_Clases_Constructores.txt) 
+   - Ejercicio para practicar Visibilidad [Clase Calculadora](./hello-world/src/com/clasesjava/one/Calculadora.java) | [Application Main que usa Clase Calculadora](./hello-world/src/com/clasesjava/one/ApplicationMainCalc.java) | [Instrucciones de Ejercicio](./ejercicios/Ejercicios17Mar_Encapsulacion.txt) 

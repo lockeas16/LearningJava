@@ -1,0 +1,20 @@
+1) Crear una clase llama Pelicula
+
+2) Declarar los siguientes atributos:
+	Sintaxis para declarar atrbutos -> tipoDato identificador;
+	a) titulo de tipo String
+	b) duracion de tipo float que represente las horas y minutos, por ejemplo 1.45 = 1 hora y 45 minutos
+	c) clasificacion de tipo String
+	d) reseña de tipo String
+
+
+3) Implementar los siguientes metodos:
+	Sintaxis para implementar metodos -> tipoDatoRetorno nombreMetodo(){ instrucciones del metodo }
+	a) un metodo que regrese un tipo de dato String y que se llame obtenerInformacion, que en el cuerpo obtenga toda la informacion de la pelicula,los datos sus atributos
+	b) un metodo que no regrese ningun tipo de dato (void) y que se llama imprimirReseña,que en el cuerpo imprima la reseña de la pelicula
+
+4) Crear una clase ejecutable ( que contenga el metodo main) y realizar lo siguiente en el cuerpo del main:
+	a) declarar e inicializar dos obtejos de tipo Pelicula
+	b) asignar valores a sus respectivos atributos para cada objeto creado anteriormente, usando el operador punto (.)
+	c) mandar a llamar el metodo obtenerInformacion e imprimir el resultado en consola para ambos objetos
+	d) mandar a lamar el metodo imprimirReseña para ambos objetos.

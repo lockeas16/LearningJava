@@ -1,0 +1,49 @@
+1) Crear una clase llama Botella
+
+2) Definir los siguientes atributos
+	a) estaTapada de tipo boolean (este tributo nos ayudara a saber si la botella esta tapada o no true = tapada, false = destapada)
+	b) mililitrosActuales de tipo int (para saber cuantos mililitros de agua tiene la botella actualmente)
+	c) mililitrosTotales de tipo int (para saber la cantidad maxima que le cabe a la botella)
+
+3) Definir un constructor que reciba un parametro de tipo int de nombre mililitrosTotales ( para que al momento de crear nuestra botella le pasemos de cuantos mililitros la queremos)
+ y en el cuerpo del constructor hacer lo siguiente
+	a) el parametro que recibe el constructor asignarselo al atributo mililitrosTotales (asi tenemos la cantidad maxima de la botella)
+	b) asignar a nuestro atributo mililitrosActuales de igual forma el parametro que llega al constructor ( de esta forma creamos una botella completamente llena)
+	c) asignar a nuestro atributo estaTapada un valor de false (asi cuando creemos la botella estará cerrada)
+
+4) Crear los siguientes metodos:
+	a) un metodo que no regrese tipo de dato, tenga por nombre destapar y no reciba parametros, el metodo debe realizar lo siguiente:
+		- debe validar que la botella este tapada (instruccion if)
+			- Si esta tapada entonces asignar al atributo estaTapada un valor de false (con esto la destapamos)
+			- si ya esta destapada imprimimos en pantalla que la botella ya esta destapada (cae en el else)
+
+	b) un metodo que no regrese tipo de dato, tenga por nombre tapar y no reciba parametros, el metodo debe realizar lo siguiente:
+		- debe validar que la botella no este tapada(instruccion if)
+			- Si la botella no esta tapada entonces asignar al atributo estaTapada un valor de true(con esto la tapamos)
+			- si ya esta tapada imprimimos en pantalla que la botella ya esta tapada(cae en el else)
+
+	c) un metodo que no regrese tipo de dato, que tenga por nombre vaciar y que reciba un parametro de tipo int llamado mililitros, el metodo debe hacer lo siguiente
+		- debe validar si la botella no esta tapada (instruccion if)
+			- si no esta tapada debe ahora validar que el atributo mililitrosActuales > 0 (con esto aseguramos que aun tiene agua para poder ser vaciada)
+				- si aun tiene agua que vaciar entonces asignamos a los mililitro actuales le quitamos lo mililitros que queremos vaciar(el parametro del metodo)
+		- si la botella esta tapada, no se podra vaciar nada y debera imprimir en pantalla que la botella esta tapada (cae en el else)
+
+	d) un metodo que no regrese tipo de dato, que tenga por nombre llenary que reciba un parametro de tipo int llamado mililitros, el metodo debe hacer lo siguiente
+		- debe validar si la botella no esta tapada (instruccion if)
+			- si no esta tapada debe ahora validar que el atributo mililitrosActuales < al atributo mililitrosTotales (con esto aseguramos que aun se le puede meter agua)
+				- si aun tiene capacidad entonces asignamos al atributo mililitrosActuales los mililitrosActuales + los mililitros que queremos meterte(el parametro)
+		- si la botella esta tapada, no se podra llenar nada y debera imprimir en pantalla que la botella esta tapada
+
+	e) un metodo que regrese un tipo de dato String y se llame obtenerInformacion, el metodo debera hacer lo siguiente
+		- deberá regresar una cadena con la informacion de los atributos del objeto ( palabra reservada return)
+
+5) Crear otra clase llamada BotellaMain
+	- definir el metodo principal, metodo main
+	- crear una botella de 2000 mililitros, usando el constructor que recibe un int para los mililitros totales
+	- comenzar a validar el correcto funcionamiento de la botella por ejemplo:
+		- que la botella no puda vaciar agua si aun esta cerrada
+		- que la botella no pueda ser llenada si aun no se abre
+		- que despues de vaciarla con exito, se vea reflejado la cantidad total de mililitros en la botella
+		- que se pueda llenar correctamente el agua con la cantidad especificada en la llamada el metod y se vea reflado en los mililiros totales de la botella
+		- etc.
+		

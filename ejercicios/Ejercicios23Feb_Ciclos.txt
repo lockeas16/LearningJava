@@ -1,0 +1,11 @@
+1) Muestra los números del 1 al 100 (ambos incluidos). Usa un bucle while.
+2) Haz el mismo ejercicio anterior con un bucle for.
+3) Muestra los números del 1 al 100 (ambos incluidos) que sean divisibles entre 2 y 3(que el ismo numero sea divisible entre 2 y entre 3, residuo cero). Utiliza el bucle que desees.
+4) Realizar la suma del 1 al 1000. Usa un bucle for  y despues un bucle while
+5) Realizar la suma de numeros pares que se encuentren entre el 1 y el 1000. Usa un bucle for  y despues un bucle while
+
+instruccion para imprimir por consola
+	System.out.println(poner aqui lo que se quiere imprimir);
+
+linea para poder ejecutar su programa
+	public static void main(String[] args) {}

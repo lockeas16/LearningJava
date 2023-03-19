@@ -1,0 +1,14 @@
+1) Declara dos variables numéricas (con el valor que desees), muestra por consola la suma, resta, multiplicación, división y módulo (resto de la división).
+2) Declara 2 variables numéricas (con el valor que desees), he indica cual es mayor de los dos. Si son iguales indicarlo también. Ve cambiando los valores para comprobar que funciona.
+3) Declara un String que contenga tu nombre, después muestra un mensaje de bienvenida por consola. Por ejemplo: si introduzco «Fernando», me aparezca «Bienvenido Fernando».
+4) Haz una aplicación que calcule el área de un círculo(pi * radio al cuadrado). Declara dos variables, una para el valor de pi y otra para el radio, usando literales para esto, mostrar
+	el resultado por consola.
+5) Usando el operador modulo (%) declarar una variable entera e indicar usando un if si el valor es par o impar.
+6) declara una variable double y comprueba si este numero es mayor o igual que cero e imprime por consola si el numero es o no es mayor a cero.
+7) declara una variable de tipo String para almacenar un dia de la semana , usala para que el programa nos diga si es un dia laboral o no. Usa un switch para ello.
+
+instruccion para imprimir por consola
+	System.outprintln(poner aqui lo que se quiere imprimir);
+
+linea para poder ejecutar su programa
+	public static void main(String[] args) {}

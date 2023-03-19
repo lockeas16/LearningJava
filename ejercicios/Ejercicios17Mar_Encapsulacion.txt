@@ -1,0 +1,32 @@
+1) Crear una clase llamada Calculadora
+
+2) definir los siguientes atributos:
+	a) primerOperador de tipo int
+	b) segundoOperador de tipo int
+
+3) Crear un constructor que reciba dos argumentos de tipo int uno como el primerOperador y otro como el segundoOperador
+	a) en el cuerpo del constructor realizar lo siguiente
+		- asignar el argumento para el primer oeprador al atributo correspondiente como primerOperador
+		- asignar el argumento para el segundo oeprador al atributo correspondiente como segundoOperador
+
+4) Crear un metodo para asignar un valor a cada atributo:
+	a) un metodo llamado asignarPrimerOperador que recibe un parametro de tipo int el cual se le asignara al atributo primerOperador
+	b) un metodo llamado asignarSegundoOperador que recibe un parametro de tipo int el cual se le asignara al atributo segundoOperador
+
+5) Crear un metodo para obtener el valor de cada atributo
+	a) un metodo llamado obtenerPrimerAtributo que regrese un int y en e cuerpo regrese el atributo llamado primerOperador
+	b) un metodo llamado obtenerSegundoAtributo que regrese un int y en e cuerpo regrese el atributo llamado segundoOperador
+
+6) Crear un metodo por cada operacion basica,
+	- suma: este metodo debera regresar el resultado de la operacion suma (primerOperador + segundoOperador)
+	- resta: este metodo debera regresar el resultado de la operacion resta (primerOperador - segundoOperador)
+	- multiplicacion: este metodo debera regresar el resultado de la operacion multiplicar (primerOperador * segundoOperador)
+	- division: este metodo debera regresar el resultado de la operacion divsion (primerOperador / segundoOperador)
+	- modulo: este metodo debera regresar el resultado de la operacion modulo (primerOperador % segundoOperador)
+	- potencia: este metodo debera regresar el resultado de la operacion potencia (primerOperador ^ segundoOperador) primerOperador (elevado a la potencia) segundo operador
+		- Para la potencia pueden apoyarse de la clase Math usando el metodo pow, que recibe dos parametros y regresa un tipo de dato:
+			Math.pow(numeroBase, numeroPotencia);
+
+		  el primero es el numero base y el segundo parametro es el numero al cual se elevara el numero base
+
+7) Aplicar la encapsulacion que crean adecuada a nivel de clase, atributos, constructores y metodos, usando la visibilidad public y private.
