@@ -29,11 +29,13 @@
       - Trabajando con la visibilidad de una clase Usuario [Clase Usuario](./hello-world/src/com/clasesjava/one/Usuario.java) | [Application Main donde se usa Usuario](./hello-world/src/com/clasesjava/one/ApplicationMainVisib.java)
          - Con notas respecto a visibilidad por defecto, public y private
          - Con notas respecto a uso de metodos para asignar y recuperar los valores de atributos privados, que pueden implementar lógica
-   - Palabra reservada ``static``
-      - Entendiendo la palabra reservada ``static`` [Clase UsuarioConStatic](./hello-world/src/com/clasesjava/one/UsuarioConStatic.java) | [Application Main donde se usa UsuarioConStatic](./hello-world/src/com/clasesjava/one/ApplicationMainStatic.java)
+   - Palabra reservada ``static`` y palabra reservada ``final``
+      - Entendiendo la palabra reservada ``static`` y ``final`` [Clase UsuarioConStatic](./hello-world/src/com/clasesjava/one/UsuarioConStatic.java) | [Application Main donde se usa UsuarioConStatic](./hello-world/src/com/clasesjava/one/ApplicationMainStatic.java) | [Application Main donde se ejemplifica final](./hello-world/src/com/clasesjava/one/ApplicationMainStatic.java)
          - Con notas respecto a la convención para nombrar métodos, así como la convención de los "getters" y "setters" para atributos privados
          - Ejemplo de un atributo static y su manejo independiente a los objetos que se generan a partir de dicha clase
          - Con **nota especial** respecto al uso de un **método no estático dentro de un contexto estático**
+         - Ejemplo de un atributo final y su manejo en los constructores, que todo constructor debe asegurarse de inicializar sus atributos final directamente o indirectamente a través de otro constructor
+         - Con nota respecto al uso de constructores dentro de otros constructores
 
 # Ejercicios
    - [Jugando con definicion de variables](./hello-world/src/PlayingVars.java)

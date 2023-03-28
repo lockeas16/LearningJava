@@ -7,12 +7,22 @@ public class UsuarioConStatic {
 	 */
 	private static int contadorUsuarios = 0;
 
+	/*
+	 * La palabra reservada final nos permite declarar como constante el valor de un
+	 * atributo y una vez asignado, no puede ser cambiado
+	 * 
+	 * Este atributo se debe asignar al momento de creación del objeto, esto es,
+	 * usando un constructor
+	 */
+	private final String cumpleanios;
+
 	// Metodos estaticos para manejar el atributo estático
 	public static int getContadorUsuarios() {
 		return contadorUsuarios;
 	}
-	
-	// Metodo no estatico para demostrar la inconsistencia de usar un metodo no estático
+
+	// Metodo no estatico para demostrar la inconsistencia de usar un metodo no
+	// estático
 	// dentro de un contexto estático
 	public int getContadorUsuariosNoStatic() {
 		return contadorUsuarios;
@@ -25,6 +35,8 @@ public class UsuarioConStatic {
 	private String nombre;
 	private String apellido;
 	private int edad;
+	
+
 	private String direccion;
 
 	public UsuarioConStatic() {
@@ -35,10 +47,15 @@ public class UsuarioConStatic {
 		// Al momento de instanciar un objeto, se incrementa el
 		// atributo estático
 		this.contadorUsuarios++;
+		// Es forzoso asignar valor a los atributos final al momento de creacion
+		// y de no asignarse, el IDE marcará un error
+		this.cumpleanios = "Desconocido";
 	}
 
 	public UsuarioConStatic(String nombre) {
 		// Aqui estamos usando el constructor vacío dentro de otro constructor
+		// El constructor vacio esta inicilizando el atributo final y por tanto no
+		// genera error
 		this();
 		this.nombre = nombre;
 	}
@@ -50,9 +67,17 @@ public class UsuarioConStatic {
 	}
 
 	public UsuarioConStatic(String nombre, String apellido, int edad) {
-		this();
-		this.nombre = nombre;
-		this.apellido = apellido;
+		// Podemos usar otros constructores, por ejemplo:
+		this(nombre, apellido);
+		/*
+		 * Y aspi evitamos las siguientes instrucciones
+		 * 
+		   this();
+		   this.nombre = nombre;
+		   this.apellido = apellido;
+		 *
+		 * porque hacen exactamente lo mismo
+		 */		
 		// Podemos invocar un método propio para asignar el atributo
 		setEdad(edad);
 	}
@@ -63,6 +88,14 @@ public class UsuarioConStatic {
 		this.apellido = apellido;
 		this.edad = edad;
 		this.direccion = direccion;
+	}
+	
+	public UsuarioConStatic(String nombre, String apellido, int edad, String direccion, String cumpleanios) {
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.edad = edad;
+		this.direccion = direccion;
+		this.cumpleanios = cumpleanios;
 	}
 
 	// Recordar que para nombrar metodos siempre empieza con minúscula y luego las
@@ -113,9 +146,22 @@ public class UsuarioConStatic {
 		return this.direccion;
 	}
 
+	public String getCumpleanios() {
+		return cumpleanios;
+	}
+	
+	/* No podemos declarar un metodo setter para un atributo final
+	 * porque el modificador ya esta declarando que su valor no puede
+	 * ser modificado, por lo siguiente, este método genera un error
+	 * 
+	   public void setCumpleanios(String cumpleanios) {
+		   this.cumpleanios = cumpleanios;
+	   }
+	 */
+	
 	public String obtenerInformacion() {
 		String information = "Nombre: " + getNombreCompleto() + "\n" + "Edad: " + edad + "\n" + "Direccion: "
-				+ direccion + "\nTotal de usuarios: " + contadorUsuarios;
+				+ direccion + "\nCumpleaños: " + cumpleanios + "\nTotal de usuarios: " + contadorUsuarios;
 		return information;
 	}
 }
