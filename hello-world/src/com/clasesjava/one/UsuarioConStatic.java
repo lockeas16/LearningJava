@@ -46,7 +46,7 @@ public class UsuarioConStatic {
 		this.direccion = "Desconocido";
 		// Al momento de instanciar un objeto, se incrementa el
 		// atributo estático
-		this.contadorUsuarios++;
+		contadorUsuarios++;
 		// Es forzoso asignar valor a los atributos final al momento de creacion
 		// y de no asignarse, el IDE marcará un error
 		this.cumpleanios = "Desconocido";
