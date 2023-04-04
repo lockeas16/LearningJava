@@ -40,6 +40,11 @@
       - [Clase UsuarioCompuesto](./hello-world/src/com/clasesjava/one/UsuarioCompuesto.java) compuesta con [Clase Direccion](./hello-world/src/com/clasesjava/one/Direccion.java) y [Clase Fecha](./hello-world/src/com/clasesjava/one/Fecha.java) | [Application Main que usa Clase UsuarioCompuesto](./hello-world/src/com/clasesjava/one/ApplicationMainComposicion.java)
          - Con notas respecto a Separación de Responsabilidades en la composición y reuso de métodos de otras clases, por ejemplo, en lugar de que la clase Usuario arme la dirección, se lo pide a un método de su atributo Dirección que sabe como hacerlo
          - Con notas sobre el encadenamiento de métodos, que no es muy recomendable
+   - enums
+      - [Enum DiasSemana](./hello-world/src/com/clasesjava/one/DiasSemana.java) | [Application Main que usa Enum DiasSemana](./hello-world/src/com/clasesjava/one/ApplicationMainEnum.java)
+         - Los valores del enum, por convención, se declaran en mayúsculas
+   - Aceptando entrada de sistema
+      - [Application Main que acepta entrada estándar de sistemas](./hello-world/src/com/clasesjava/one/ApplicationMainInput.java)
 
 # Ejercicios
    - [Jugando con definicion de variables](./hello-world/src/PlayingVars.java)
