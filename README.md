@@ -47,8 +47,14 @@
       - [Application Main que acepta entrada estándar de sistemas](./hello-world/src/com/clasesjava/one/ApplicationMainInput.java)
    - Trabajando con herencia
       - Clase [Persona](./hello-world/src/com/clasesjava/one/Persona.java) | Clase [Profesor que hereda de Persona ](./hello-world/src/com/clasesjava/one/Profesor.java) | Clase [Estudiante que hereda de Persona](./hello-world/src/com/clasesjava/one/Estudiante.java)
-      - [Application Main que trabaja con clases que usan herencia](./hello-world/src/com/clasesjava/one/ApplicationMainInput.java)
+      - [Application Main](./hello-world/src/com/clasesjava/one/ApplicationMainHerencia.java) que trabaja con clases que usan herencia | Otro [Application Main](./hello-world/src/com/clasesjava/one/ApplicationMainHerenciaSuper.java) que trabaja con herencia y clases que usan super
          - Recordar que toda clase hereda de una clase Padre Object, y que hereda todos esos atributos y métodos públicos y con visibilidad default de la clase padre
+         - Las clases [Estudiante](./hello-world/src/com/clasesjava/one/Estudiante.java) y [Profesor](./hello-world/src/com/clasesjava/one/Profesor.java) tienen ejemplos de la palabra reservada ``super`` que nos sirve para hacer referencia a los constructores y metodos de la clase padre
+   - Sobrescritura y sobrecarga
+      - Clase [Persona](./hello-world/src/com/clasesjava/one/Persona.java) con sobreescritura del metodo toString() de la clase Object, con nota de la anotacion ``@Override``
+      - Clase [Estudiante](./hello-world/src/com/clasesjava/one/Estudiante.java) con sobrecarga del metodo setCarrera
+      - Clase [Profesor](./hello-world/src/com/clasesjava/one/Profesor.java) con sobrecarga del metodo agregarMateria y sobreescritura del metodo toString
+      - [Application Main que ejemplifica sobreescritura y sobrecarga](./hello-world/src/com/clasesjava/one/ApplicationMainSobreEscSobreCar.java)
 
 # Ejercicios
    - [Jugando con definicion de variables](./hello-world/src/PlayingVars.java)

@@ -1,6 +1,5 @@
 package com.clasesjava.one;
 
-
 /*
  * La herencia solo aplica de abajo hacia arriba, los hijos acceden a lo que
  * hereda de la clase padre pero la clase padre no puede acceder a lo definido
@@ -12,28 +11,28 @@ public class Profesor extends Persona {
 	 * definan en la visibilidad (esto es todo menos lo private). Esto serán los
 	 * constructores más métodos getters y setters
 	 */
-	
+
 	private final String grado;
 	private String[] materias;
 	private int indiceMaterias;
-	
+
 	public Profesor() {
 		super();
 		// Asignamos un grado por default
 		this.grado = "Licenciatura";
 	}
-	
+
 	public Profesor(String nombre, Integer edad, Boolean genero) {
 		super(nombre, edad, genero);
 		// Asignamos un grado por default
 		this.grado = "Licenciatura";
 	}
-	
+
 	public Profesor(String nombre, Integer edad, Boolean genero, String grado) {
 		super(nombre, edad, genero);
 		this.grado = grado;
-	}	
-		
+	}
+
 	public Profesor(String grado) {
 		// Usamos el constructor vacio
 		super();
@@ -48,11 +47,12 @@ public class Profesor extends Persona {
 		// Asignamos un grado por default
 		this.grado = "Licenciatura";
 	}
-	
+
 	public String getGrado() {
 		return grado;
 	}
-	
+
+	// Aqui tenemos sobrecarga del metodo agregarMateria
 	public void agregarMateria(String materia) {
 		if (this.indiceMaterias < 5) {
 			this.materias[this.indiceMaterias] = materia;
@@ -61,18 +61,34 @@ public class Profesor extends Persona {
 			System.out.println("Este profesor ya no puede impartir más materias");
 		}
 	}
-	
-	public String obtenerInformacionProfesor() {
-		String materias="";
+
+	public void agregarMateria(String[] materias) {
+		this.materias = materias;
+	}
+
+	@Override
+	public String toString() {
+		String materias = "";
 		for (int i = 0; i < this.materias.length; i++) {
 			if (this.materias[i] == null) {
 				break;
-			} 
+			}
 			// El \t inserta un tabulador
-			materias +="\n\t" + this.materias[i];
+			materias += "\n\t" + this.materias[i];
 		}
-		 
+		return super.toString() + "\nGrado: " + this.grado + "\nMaterias: " + materias;
+	}
+
+	public String obtenerInformacionProfesor() {
+		String materias = "";
+		for (int i = 0; i < this.materias.length; i++) {
+			if (this.materias[i] == null) {
+				break;
+			}
+			// El \t inserta un tabulador
+			materias += "\n\t" + this.materias[i];
+		}
+
 		return this.obtenerInformacionPersona() + "\nMaterias: " + materias;
 	}
-	
 }
