@@ -46,7 +46,7 @@
    - Aceptando entrada de sistema
       - [Application Main que acepta entrada estándar de sistemas](./hello-world/src/com/clasesjava/one/ApplicationMainInput.java)
    - Trabajando con herencia
-      - Clase [Persona](./hello-world/src/com/clasesjava/one/Persona.java) | Clase [Profesor] que hereda de Persona (./hello-world/src/com/clasesjava/one/Persona.java) | Clase [Profesor] que hereda de Persona (./hello-world/src/com/clasesjava/one/Persona.java)
+      - Clase [Persona](./hello-world/src/com/clasesjava/one/Persona.java) | Clase [Profesor que hereda de Persona ](./hello-world/src/com/clasesjava/one/Profesor.java) | Clase [Estudiante que hereda de Persona](./hello-world/src/com/clasesjava/one/Estudiante.java)
       - [Application Main que trabaja con clases que usan herencia](./hello-world/src/com/clasesjava/one/ApplicationMainInput.java)
          - Recordar que toda clase hereda de una clase Padre Object, y que hereda todos esos atributos y métodos públicos y con visibilidad default de la clase padre
 
