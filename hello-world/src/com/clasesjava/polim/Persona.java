@@ -1,15 +1,16 @@
-package com.clasesjava.one;
+package com.clasesjava.polim;
 
-public class Persona {
-	// La visibilidad protected permite que se acceda a los astributos y metodos
-	// dentro de la misma clase y las clases hijas
+abstract class Persona {
 	protected String nombre;
 	protected Integer edad;
 	protected Boolean genero;
 
-	// Si ya existe un constructor, no se genera por default un constructor vacio!
 	public Persona() {
 	}
+
+	// Sólo es posible definir un metodo abstracto dentro de una clase abstracta!
+	// Los metodos abstractos no tienen implementacion dentro de la clase abstracta
+	public abstract void irAlEscuela();
 
 	public Persona(String nombre, Integer edad, Boolean genero) {
 		this.nombre = nombre;
@@ -45,16 +46,6 @@ public class Persona {
 		return "Nombre: " + this.getNombre() + "\nEdad: " + this.getEdad() + "\nGenero: " + this.getGenero();
 	}
 
-	/*
-	 * La sobreescritura es cuando queremos que un metodo heredado se comporte de
-	 * manera distinta Para aplicar sobrescritura, requerimos que la firma del
-	 * método padre tiene que ser exactamente la misma. Con firma nos referimos que
-	 * tenga la misma visibilidad, se llama igual y recibe los mismos argumentos
-	 * 
-	 * Una manera de saber que estamos aplicando la sobreescritura de manera
-	 * correcta es usando la anotacion @Override. Esto le indica al compilador que
-	 * nos valide la implementacion sobre el metodo
-	 */
 	@Override
 	public String toString() {
 		return "Name: " + this.getNombre() + "\nAge: " + this.getEdad() + "\nGender: " + this.getGenero();

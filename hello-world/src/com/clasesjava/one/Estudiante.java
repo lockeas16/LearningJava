@@ -60,7 +60,7 @@ public class Estudiante extends Persona {
 	public void setCarrera(String carrera) {
 		this.carrera = carrera;
 	}
-	
+
 	public void setCarrera(Integer numeroCarrera) {
 		switch (numeroCarrera) {
 		case 1:
@@ -81,9 +81,19 @@ public class Estudiante extends Persona {
 	public String getCarrera() {
 		return this.carrera;
 	}
-	
+
 	@Override
 	public String toString() {
 		return super.toString() + "\nCareer: " + this.carrera + "\nSemester: " + this.semestre;
+		/*
+		 * Esto es posible porque tenemos atributos protected que pueden ser accedidos
+		 * tambien por las clases hijas
+		 * 
+		 * nombre, edad y genero son atributos de la clase padre pero podemos accederlos
+		 * directamente al ser protected
+		 * 
+		 * return "Name: " + this.nombre + "\nAge: " + this.edad + "\nGender: " + this.genero +
+		 * "\nCareer: " + this.carrera + "\nSemester: " + this.semestre;
+		 */
 	}
 }

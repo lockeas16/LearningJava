@@ -55,6 +55,17 @@
       - Clase [Estudiante](./hello-world/src/com/clasesjava/one/Estudiante.java) con sobrecarga del metodo setCarrera
       - Clase [Profesor](./hello-world/src/com/clasesjava/one/Profesor.java) con sobrecarga del metodo agregarMateria y sobreescritura del metodo toString
       - [Application Main que ejemplifica sobreescritura y sobrecarga](./hello-world/src/com/clasesjava/one/ApplicationMainSobreEscSobreCar.java)
+   - Visibilidad ``protected``
+      - Clase [Persona](./hello-world/src/com/clasesjava/one/Persona.java) con atributos protegidos que pueden ser accedidos desde las clases hijas que heredan de esta, tales como [Estudiante](./hello-world/src/com/clasesjava/one/Estudiante.java) o [Profesor](./hello-world/src/com/clasesjava/one/Profesor.java)
+   - Polimorfismo
+      - [Application Main que ejemplifica polimorfismo](./hello-world/src/com/clasesjava/one/ApplicationMainSobreEscSobreCar.java)
+         - El polimorfismo se logra gracias a la herencia, que permite que una clase se comporte como otra mientras haya herencia de por medio. Por ejemplo, podemos definir un objeto Persona que se comporte como Estudiante y también podemos definir un objeto que se comporte como Profesor. Esto es posible porque ambos también son Personas por herencia. Un Estudiante sí o sí es una Persona así como un Profesor también es una Persona. El polimorfismo nos permite que un objeto se comporte de distintas maneras.
+   - ``abstract``
+      - [Application Main que ejemplifica abstract](./hello-world/src/com/clasesjava/polim/ApplicatioMainAbstract.java)
+      - Clase [Persona](./hello-world/src/com/clasesjava/polim/Persona.java) que es abstracta | Clase [Estudiante](./hello-world/src/com/clasesjava/polim/Estudiante.java) que hereda de Persona | Clase [Profesor](./hello-world/src/com/clasesjava/polim/Profesor.java) que hereda de Persona
+      - Clase [Empleado](./hello-world/src/com/clasesjava/polim/Empleado.java) que también es abstracta y no esta obligada a implementar los metodos abstractas de la clase padre
+         - Las clases abstractas no pueden instanciarse y solo pueden usarse para definirse como tipos, esto es, que siempre tienen que instanciarse con los tipos de las clases hijas que los implementan.
+         - Un método abstracto sólo puede ser declarado en clases abstractas y tiene que ser implementado en las clases hijas para darles una lógica particular al tipo heredado
 
 # Ejercicios
    - [Jugando con definicion de variables](./hello-world/src/PlayingVars.java)
