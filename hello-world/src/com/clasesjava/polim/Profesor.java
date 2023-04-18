@@ -1,9 +1,28 @@
 package com.clasesjava.polim;
 
-class Profesor extends Persona {
+class Profesor extends Persona implements Responsabilidades {
 	private final String grado;
 	private String[] materias;
 	private int indiceMaterias;
+
+	// La interfaz permite que las clases proporcionen su propia implementación de
+	// los métodos de la interfaz
+	@Override
+	public void atenderClase() {
+		System.out.println("Dar la clase");
+		System.out.println("Resolver dudas");
+	}
+
+	@Override
+	public void prepararClase() {
+		System.out.println("Revisar el tema");
+		System.out.println("Revisar ejercicios");
+	}
+
+	@Override
+	public void presentarExamen() {
+		System.out.println("Revisar que no hagan trampa los alumnos");
+	}
 
 	// Es obligatorio que los métodos abstractos se implementen en las clases hijas
 	@Override
@@ -11,7 +30,7 @@ class Profesor extends Persona {
 		// Esto nos permite darle un comportamiento particular al metodo para cada tipo
 		System.out.println("Yo voy a la escuela en mi auto");
 	}
-	
+
 	public Profesor() {
 		super();
 		this.grado = "Licenciatura";

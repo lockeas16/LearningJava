@@ -66,7 +66,14 @@
       - Clase [Empleado](./hello-world/src/com/clasesjava/polim/Empleado.java) que también es abstracta y no esta obligada a implementar los metodos abstractas de la clase padre
          - Las clases abstractas no pueden instanciarse y solo pueden usarse para definirse como tipos, esto es, que siempre tienen que instanciarse con los tipos de las clases hijas que los implementan.
          - Un método abstracto sólo puede ser declarado en clases abstractas y tiene que ser implementado en las clases hijas para darles una lógica particular al tipo heredado
-
+   - Interfaces
+      - [Application Main que ejemplifica interfaces](./hello-world/src/com/clasesjava/polim/ApplicationMainInterf.java)
+      - Interfaz [Responsabilidades](./hello-world/src/com/clasesjava/polim/Responsabilidades.java)
+      - Clase [Estudiante](./hello-world/src/com/clasesjava/polim/Estudiante.java) que implementa interfaz Responsabilidades | Clase [Profesor](./hello-world/src/com/clasesjava/polim/Profesor.java) que implementa interfaz Responsabilidades
+         - La interfaz siempre debe ser implementada en alguna parte del árbol de herencia entre clases, sin importar si es la última clase hija o alguna que este enmedio del árbol de herencia. P. ej. supongamos una clase Ingeniero que hereda de una Clase Estudiante, la Clase Estudiante es abstracta, implementa una interfaz Responsabilidades y hereda de una clase Persona, y finalmente la Clase Persona es abstracta. La Clase Ingeniero podría no implementar todos los métodos abstractos de una interfaz si estos ya fueron implementados en la Clase Estudiante
+   - Lists
+      - [Application Main que usa List](./hello-world/src/com/clasesjava/one/ApplicationMainListas.java)
+      
 # Ejercicios
    - [Jugando con definicion de variables](./hello-world/src/PlayingVars.java)
    - [Manejo de variables y control de flujo](./hello-world/src/Ejercicios20Feb.java) | [Instrucciones de Ejercicio](./ejercicios/Ejercicios20Feb_Tipos_Variables.txt)

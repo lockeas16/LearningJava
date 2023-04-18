@@ -1,8 +1,29 @@
 package com.clasesjava.polim;
 
-class Estudiante extends Persona {
+// Una clase implementa una interfaz con la palabra reservada "implements" y es independiente a la Herencia
+class Estudiante extends Persona implements Responsabilidades {
 	private String carrera;
 	private Integer semestre;
+
+	// La clase que implementa una interfaz, debe implementar forzosamnente todos
+	// los metodos de la interfaz. Sólo si es abstracta podría omitir su implementación
+	@Override
+	public void atenderClase() {
+		System.out.println("Poner atención");
+		System.out.println("Hacer preguntas");
+	}
+	
+	@Override
+	public void prepararClase() {
+		System.out.println("Repasar lo visto anteriormente");
+		System.out.println("Hacer la tarea");		
+	}
+	
+	@Override
+	public void presentarExamen() {
+		System.out.println("Tener concentración");
+		System.out.println("Contestar las preguntas");				
+	}
 
 	// Es obligatorio que los métodos abstractos se implementen en las clases hijas
 	@Override
@@ -10,7 +31,7 @@ class Estudiante extends Persona {
 		// Esto nos permite darle un comportamiento particular al metodo para cada tipo
 		System.out.println("Yo voy a la escuela en autobus");
 	}
-	
+
 	public Estudiante() {
 		super(); // Siempre es necesario primero llamar el constructor de la clase padre!
 	}
