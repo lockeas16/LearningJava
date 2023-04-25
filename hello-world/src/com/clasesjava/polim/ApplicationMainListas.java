@@ -1,5 +1,4 @@
-package com.clasesjava.one;
-
+package com.clasesjava.polim;
 // List y ArrayList vienen de los siguientes paquetes
 import java.util.ArrayList;
 // List permite agregar elementos a esta lista y va creciendo dinámicamente
@@ -40,7 +39,52 @@ public class ApplicationMainListas {
 		} else {
 			System.out.println("El numero 450 no existe en la lista");
 		}
+		
+		System.out.println("metodo get ------------------------");
+		// Obtener un elemento de la lista, el del índice que le indiquemos
+		Integer valor = listaNumerica.get(3);
+		System.out.println(valor);
+		
+		// Obtenemos el indice de la primera ocurrencia del valor que le indiquemos
+		System.out.println("metodo indexOf ------------------------");
+		int indice = listaNumerica.indexOf(2);
+		System.out.println(indice);
+		
+		// Asi podemos saber si una lista esta vacia
+		boolean estaVacia = listaNumerica.isEmpty();
+		if (estaVacia) {
+			System.out.println("La lista esta vacia");
+		} else {
+			System.out.println("La lista no esta vacia");
+		}
+		
+		// Para obtener el tamanio de una lista
+		int tamanio = listaNumerica.size();
+		System.out.println("La lista tiene un tamanio de: " + tamanio);
+		
+		// Así vaciamos la lista
+		listaNumerica.clear();
+		imprimirLista(listaNumerica);
 
+		// Podemos manejar listas de tipos que generamos nosotros
+		List <Persona> listaPersonas= new ArrayList<Persona> ();
+		Persona estudiante = new Estudiante("Antonio", 35, true, "Computacion", 4);
+		Persona profesor = new Profesor("Mario", 25, true, "Ingeniero");
+		Persona nino = new Nino("Mayito", 5, true);
+		
+		listaPersonas.add(estudiante);
+		listaPersonas.add(profesor);
+		listaPersonas.add(nino);
+		
+		// Y sin importar que tenemos un tipo especifico para la lista, podemos seguir usando los metodos de la clase List
+		listaPersonas.remove(1);
+		
+		// Utilizamos ahora el metodo get para recuperar todos los elementos de la lista
+		for (int i = 0; i < listaPersonas.size(); i++) {
+			Persona persona = listaPersonas.get(i);
+			System.out.println(persona);
+			System.out.println("-----------------------------------");
+		}
 	}
 
 	public static void imprimirLista(List<Integer> lista) {

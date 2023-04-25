@@ -72,7 +72,10 @@
       - Clase [Estudiante](./hello-world/src/com/clasesjava/polim/Estudiante.java) que implementa interfaz Responsabilidades | Clase [Profesor](./hello-world/src/com/clasesjava/polim/Profesor.java) que implementa interfaz Responsabilidades
          - La interfaz siempre debe ser implementada en alguna parte del árbol de herencia entre clases, sin importar si es la última clase hija o alguna que este enmedio del árbol de herencia. P. ej. supongamos una clase Ingeniero que hereda de una Clase Estudiante, la Clase Estudiante es abstracta, implementa una interfaz Responsabilidades y hereda de una clase Persona, y finalmente la Clase Persona es abstracta. La Clase Ingeniero podría no implementar todos los métodos abstractos de una interfaz si estos ya fueron implementados en la Clase Estudiante
    - Lists
-      - [Application Main que usa List](./hello-world/src/com/clasesjava/one/ApplicationMainListas.java)
+      - [Application Main que usa List](./hello-world/src/com/clasesjava/polim/ApplicationMainListas.java)
+   - Sets
+      - [Application Main que usa HashSet](./hello-world/src/com/clasesjava/polim/ApplicationMainSet.java)
+      - [Application Main que usa TreeSet](./hello-world/src/com/clasesjava/polim/ApplicationMainTreeSet.java)
       
 # Ejercicios
    - [Jugando con definicion de variables](./hello-world/src/PlayingVars.java)

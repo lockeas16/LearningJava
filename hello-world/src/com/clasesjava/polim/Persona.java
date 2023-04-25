@@ -1,6 +1,7 @@
 package com.clasesjava.polim;
 
-abstract class Persona {
+//La interfaz Comparable nos permite integrarle el metodo compareTo para que pueda ser usado, por ejemplo, el TreeSet
+abstract class Persona implements Comparable<Persona> {
 	protected String nombre;
 	protected Integer edad;
 	protected Boolean genero;
@@ -49,5 +50,22 @@ abstract class Persona {
 	@Override
 	public String toString() {
 		return "Name: " + this.getNombre() + "\nAge: " + this.getEdad() + "\nGender: " + this.getGenero();
+	}
+
+	@Override
+	public int compareTo(Persona persona) {
+		// Del objeto actual comparamos el atributo String con el del argumento de
+		// entrada
+
+		// Esto indica que si el nombre actual es menor al comparado
+		if (this.nombre.compareTo(persona.getNombre()) < 0) {
+			return -1;
+		}
+		// Si los nombres son iguales, el compareTo regresara cero
+		if (this.nombre.compareTo(persona.getNombre()) == 0) {
+			return 0;
+		} else { // Y finalmente, el otro caso es que el nombre actual es mayor alfabeticamente al del argumento
+			return 1;
+		}
 	}
 }
