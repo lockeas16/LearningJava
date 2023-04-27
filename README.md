@@ -74,8 +74,13 @@
    - Lists
       - [Application Main que usa List](./hello-world/src/com/clasesjava/polim/ApplicationMainListas.java)
    - Sets
-      - [Application Main que usa HashSet](./hello-world/src/com/clasesjava/polim/ApplicationMainSet.java)
       - [Application Main que usa TreeSet](./hello-world/src/com/clasesjava/polim/ApplicationMainTreeSet.java)
+      - [Application Main que usa HashSet](./hello-world/src/com/clasesjava/polim/ApplicationMainSet.java)
+   - Maps
+      - [Application Main que usa HashMap](./hello-world/src/com/clasesjava/polim/ApplicationMainHashMap.java)
+   - Manejo de excepciones
+      - [Application Main de ejemplo de excepciones](./hello-world/src/com/clasesjava/one/ApplicationMainErrors.java)
+      - [Application Main para manejo de excepciones en metodos](./hello-world/src/com/clasesjava/one/ApplicationMainMethodExcep.java)
       
 # Ejercicios
    - [Jugando con definicion de variables](./hello-world/src/PlayingVars.java)
